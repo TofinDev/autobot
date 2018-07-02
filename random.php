@@ -102,6 +102,13 @@ echo "Today is " . date("Y/m/d") . "<br>";
  date_default_timezone_set('Asia/Bangkok');
 echo "The time is " . date("h:i:sa"). "<br><br>"; 
 	
+
+$zone = array("North :: ","BangKok :: ","Myanmar","Northeast and East ::","South and West :: ");
+shuffle($zone);
+foreach ($zone as $zone) {
+    echo "$zone ";
+}
+	
 $a=$_POST['chk'];
 shuffle($a);	
 foreach ($a as $a) {
