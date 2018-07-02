@@ -118,6 +118,7 @@ foreach ($a as $a) {
 
 echo "<pre>";
 echo $zone[$x];
+echo "</pre>";	
   echo "<br>";
 	
    print_r($a);
