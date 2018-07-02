@@ -107,13 +107,18 @@ $a=$_POST['chk'];
 shuffle($a);
 
 foreach ($a as $a) {
-    echo "$a<br><br> ";
+   
 	
 echo "<pre>";
-$zone = array('North ::', 'BangKok ::',"Northeast and East ::","South and West :: ");	
-print_r($zone);				
+echo "North :: " . $a[0] ."<br>";
+echo "BangKok :: " . $a[1] ."<br>";
+echo "Northeast and East :: " . $a[2] ."<br>";
+echo "South and West ::  " . $a[3] .."<br><br>";
 
 echo "</pre>";	
+	
+
+
 	
 	
 }	
