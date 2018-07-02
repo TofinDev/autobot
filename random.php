@@ -111,12 +111,10 @@ for($x = 0; $x < $arrlength; $x++) {
     echo "<br>";		
 }	
 $a=$_POST['chk'];
-$zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West :: ");
 shuffle($a);	
-foreach ($a as $a) {
-	
+foreach ($a as $a) {	
 echo "<pre>";		
-print_r(array_interlace($zone, $a)); 
+print_r($a); 
 echo "</pre>";	
 }
 	
