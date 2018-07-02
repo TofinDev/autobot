@@ -102,23 +102,17 @@ echo "Today is " . date("Y/m/d") . "<br>";
  date_default_timezone_set('Asia/Bangkok');
 echo "The time is " . date("h:i:sa"). "<br><br>"; 
 	
-$zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West :: ");
-$arrlength = count($zone);
-
-for($x = 0; $x < $arrlength; $x++) {
-    echo $zone[$x];
-    echo "<br>";
-echo "<pre>";	
-   print_r($a);
-
-echo "</pre>";	
-}
-
 	
 $a=$_POST['chk'];
+$zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West :: ");
+$arrlength = count($zone);
+for($x = 0; $x < $arrlength; $x++) 	
+	
 shuffle($a);	
 foreach ($a as $a) {
 	
+ echo $zone[$x];
+    echo "<br>";	
 echo "<pre>";		
    print_r($a);
 
