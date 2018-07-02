@@ -101,15 +101,15 @@ document.onmouseup = mousehandler;
 echo "Today is " . date("Y/m/d") . "<br>";
  date_default_timezone_set('Asia/Bangkok');
 echo "The time is " . date("h:i:sa"). "<br><br>"; 
-$a=$_POST['chk'];
-$random_keys=array_rand($a,4);
-
-echo "North :: " .$a[$random_keys[0]]."<br>";
-echo "BangKok :: " .$a[$random_keys[1]]."<br>";
-echo "Northeast and East :: " .$a[$random_keys[2]]."<br>";
-echo "South and West ::  " .$a[$random_keys[3]]."<br><br>";
 	
+$a=$_POST['chk'];
+	
+shuffle($a);
 
+foreach ($a as $a) {
+    echo "$a ";
+}	
+	
 
  ?>
  
