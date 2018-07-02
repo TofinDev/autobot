@@ -107,6 +107,15 @@ $zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West 
 
 $random = array_combine($zone,$a);
 echo count($random);
+
+	$arrlength = count($random);
+
+for($x = 0; $x < $arrlength; $x++) {
+    echo $random[$x];
+    echo "<br>";
+}
+	
+	
 	
 shuffle($random);
 	
