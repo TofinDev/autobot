@@ -103,27 +103,22 @@ echo "Today is " . date("Y/m/d") . "<br>";
 echo "The time is " . date("h:i:sa"). "<br><br>"; 
 	
 $a=$_POST['chk'];
+$zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West :: ");
+
+$random = array_combine($zone,$a);
+
 	
-shuffle($a);
+shuffle($random);
 
-foreach ($a as $a) {
-
-
-echo "<pre>";
-$zone = array("North :: ","BangKok :: ","Myanmar","Northeast and East ::","South and West :: ");
-print_r($zone);	
-   
-
-echo "</pre>";
+foreach ($random as $random) {
 	
 echo "<pre>";
-print_r($zone);	
-   print_r($a);
+
+   print_r($random);
 
 echo "</pre>";
 
-	
-	
+		
 	
 }
 	
