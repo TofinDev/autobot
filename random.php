@@ -108,9 +108,12 @@ shuffle($a);
 
 foreach ($a as $a) {
     echo "$a ";
+$random_keys=($a,4);	
+echo "North :: " .$a[$random_keys[0]]."<br>";
+echo "BangKok :: " .$a[$random_keys[1]]."<br>";
+echo "Northeast and East :: " .$a[$random_keys[2]]."<br>";
+echo "South and West ::  " .$a[$random_keys[3]]."<br><br>";
 }	
-	
-
  ?>
  
 <br><br><br><br>
