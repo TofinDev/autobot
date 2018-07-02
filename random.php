@@ -114,7 +114,7 @@ foreach ($random as $random) {
 	
 echo "<pre>";
 
-   print_r($random);
+   print_r(#zone,$random);
 
 echo "</pre>";
 
