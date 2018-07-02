@@ -109,22 +109,6 @@ echo "BangKok :: " .$a[$random_keys[1]]."<br>";
 echo "Northeast and East :: " .$a[$random_keys[2]]."<br>";
 echo "South and West ::  " .$a[$random_keys[3]]."<br><br>";
 	
-	
-	$arr =$_POST['chk'];
-$last_index = count($arr) - 1;
-$indexs = array();
-
-do{
-$rand = rand($last_index);
-if( !in_array($rand, $indexs) )
-array_push($rand);
-
-$i++;
-}while($i < $last_index);
-
-// แสดงค่า
-foreach($indexs as $arr_index)
-echo $arr[$arr_index];
 
 
  ?>
