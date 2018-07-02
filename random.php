@@ -99,7 +99,7 @@ document.onmouseup = mousehandler;
 
  <?php
 echo "Today is " . date("Y/m/d") . "<br>";
-echo "The time is " . date("h:i:sa"). "<br><br>"; 
+echo "The time is " . date("h+7:i:sa"). "<br><br>"; 
 $a=$_POST['chk'];
 $random_keys=array_rand($a,4);
 
