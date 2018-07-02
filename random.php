@@ -115,7 +115,12 @@ foreach ($a as $a) {
 	
 echo "<pre>";
 	
-   print_r($zone,$a);
+   print_r($zone);
+
+echo "</pre>";	
+echo "<pre>";
+	
+   print_r($a);
 
 echo "</pre>";	
 }
