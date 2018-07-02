@@ -108,8 +108,14 @@ shuffle($a);
 
 foreach ($a as $a) {
 
-$zone = array("North :: ","BangKok :: ","Myanmar","Northeast and East ::","South and West :: ");
 
+echo "<pre>";
+$zone = array("North :: ","BangKok :: ","Myanmar","Northeast and East ::","South and West :: ");
+print_r($zone);	
+   
+
+echo "</pre>";
+	
 echo "<pre>";
 print_r($zone);	
    print_r($a);
