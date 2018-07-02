@@ -110,7 +110,7 @@ foreach ($a as $a) {
     echo "$a ";
 	
 echo "<pre>";
-print_r( $a );
+print_r('North ::', 'BangKok ::',"Northeast and East ::","South and West :: ");
 echo "</pre>";	
 	
 	
