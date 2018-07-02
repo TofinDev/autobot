@@ -110,7 +110,7 @@ foreach ($a as $a) {
     echo "$a ";
 	
 echo "<pre>";
-$zone = array('North ::', 'BangKok ::',"Northeast and East ::","South and West :: ");	
+$zone = ('North ::', 'BangKok ::',"Northeast and East ::","South and West :: ");	
 print_r($zone);				
 
 echo "</pre>";	
