@@ -107,7 +107,10 @@ $a=$_POST['chk'];
 shuffle($a);
 
 foreach ($a as $a) {
-echo $a;
+echo "North :: " .$a[0]."<br>";
+
+	
+	
 }
 	
 
