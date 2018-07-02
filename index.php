@@ -166,7 +166,7 @@ $(function(){
     $(".css_data_item").click(function(){  
         if($(this).prop("checked")==true){ 
             var indexObj=$(this).index(".css_data_item"); //     
-            if($(".css_data_item:checked").length>5){
+            if($(".css_data_item:checked").length>4){
             $(".css_data_item").not(":eq("+indexObj+")").prop( "checked", false ); 
             }
         }    
