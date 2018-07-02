@@ -109,10 +109,7 @@ for($x = 0; $x < $arrlength; $x++) {
     echo $zone[$x];
     echo "<br>";
 }
-echo "<pre>";
-	
-   print_r($zone);
-echo "</pre>";	
+
 	
 $a=$_POST['chk'];
 shuffle($a);	
@@ -120,6 +117,8 @@ foreach ($a as $a) {
 	
 
 echo "<pre>";
+echo $zone[$x];
+  echo "<br>";
 	
    print_r($a);
 
