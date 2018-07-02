@@ -114,11 +114,6 @@ print_r( $a );
 echo "</pre>";	
 	
 	
-	
-echo "North :: " .[$a[0]]."<br>";
-echo "BangKok :: " .[$a[1]]."<br>";
-echo "Northeast and East :: " .[$a[2]]."<br>";
-echo "South and West ::  " .[$a[3]]."<br><br>";
 }	
  ?>
  
