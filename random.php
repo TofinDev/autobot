@@ -111,8 +111,9 @@ foreach ($a as $a) {
 $zone = array("North :: ","BangKok :: ","Myanmar","Northeast and East ::","South and West :: ");
 
 $random = array_combine($zone,$a);
+	echo=$random;
 echo "<pre>";
-   print_r($random);
+   print_r($a);
 
 echo "</pre>";
 
