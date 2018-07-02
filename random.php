@@ -107,13 +107,7 @@ $a=$_POST['chk'];
 shuffle($a);
 
 foreach ($a as $a) {
-$cars = array("Volvo", "BMW", "Toyota"); 
-echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";	
-	
-echo "North :: " . $a[0] ."<br>";
-echo "BangKok :: " . $a[1] ."<br>";
-echo "Northeast and East :: " . $a[2] ."<br>";
-echo "South and West ::  " . $a[3] .."<br><br>";
+echo $a;
 }
 	
 
