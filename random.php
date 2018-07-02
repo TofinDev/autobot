@@ -107,11 +107,16 @@ $a=$_POST['chk'];
 shuffle($a);
 
 foreach ($a as $a) {
-	
+
+$zone = array("North :: ","BangKok :: ","Myanmar","Northeast and East ::","South and West :: ");
+
+$random = array_combine($zone,$a);
 echo "<pre>";
-   print_r($a);
+   print_r($random);
+
 echo "</pre>";
 
+	
 	
 	
 }
