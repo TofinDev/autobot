@@ -109,7 +109,7 @@ for($x = 0; $x < $arrlength; $x++) {
     echo $zone[$x];
     echo "<br>";
 echo "<pre>";	
-   print_r($zone);
+   print_r($a);
 
 echo "</pre>";	
 }
