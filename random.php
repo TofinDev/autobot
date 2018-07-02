@@ -116,10 +116,10 @@ foreach ($a as $a) {
 	
 echo "<pre>";		
    print_r($a);
-"North :: "
-"BangKok :: "	
-"Northeast and East ::"
-"South and West :: "	
+"North :: ";
+"BangKok :: "	;
+"Northeast and East ::";
+"South and West :: ";	
 echo "</pre>";	
 }
 	
