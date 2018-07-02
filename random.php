@@ -108,8 +108,7 @@ $arrlength = count($zone);
 for($x = 0; $x < $arrlength; $x++) {
     echo $zone[$x];
     echo "<br>";
-echo "<br>";
-	
+echo "<pre>";	
    print_r($zone);
 
 echo "</pre>";	
@@ -120,8 +119,7 @@ $a=$_POST['chk'];
 shuffle($a);	
 foreach ($a as $a) {
 	
-echo "<br>";
-	
+echo "<pre>";		
    print_r($a);
 
 echo "</pre>";	
