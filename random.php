@@ -114,7 +114,7 @@ $a=$_POST['chk'];
 shuffle($a);	
 foreach ($a as $a) {	
 echo "<pre>";		
-print_r(. $a[0] .); 
+print_r($a[0]); 
 echo "</pre>";	
 }
 	
