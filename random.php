@@ -103,24 +103,17 @@ echo "Today is " . date("Y/m/d") . "<br>";
 echo "The time is " . date("h:i:sa"). "<br><br>"; 
 	
 $a=$_POST['chk'];
-
-}
-	
-shuffle($a);
-	
+shuffle($a);	
 foreach ($a as $a) {
 	
 echo "<pre>";
 
    print_r($a);
 
-echo "</pre>";
-
-		
-	
+echo "</pre>";	
 }
 	
-
+	
  ?>
  
 <br><br><br><br>
