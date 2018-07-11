@@ -107,9 +107,9 @@ echo "The time is " . date("h:i:sa"). "<br><br>";
 $zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West :: ");
 	shuffle($zone);	
 foreach ($zone as $zone){
-<br>
+
 print_r($zone); 
-<br>		
+	
 }	
 $a=$_POST['chk'];
 shuffle($a);	
