@@ -106,20 +106,17 @@ echo "The time is " . date("h:i:sa"). "<br><br>";
 
 $zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West :: ");
 	shuffle($zone);	
-foreach ($zone as $zone){
-echo "<pre>";		
-print_r($zone); 
-echo "</pre>";
+foreach ($zone as $zone){	
+
 		
 }	
 $a=$_POST['chk'];
 shuffle($a);	
 foreach ($a as $a) {
-echo "<pre>";		
-print_r($a); 
-echo "</pre>";
-	
 }
+echo "<pre>";		
+print_r($zone + $a); 
+echo "</pre>";	
 	
  ?>
  
