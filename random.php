@@ -104,7 +104,7 @@ echo "The time is " . date("h:i:sa"). "<br><br>";
 	
 	
 
-$zone = array("North :: ","BangKok :: ","Northeast and East ::","South and West :: ");
+$zone = array("North :: ","BangKok and East :: ","Northeast ::","South Central and West :: ");
 	shuffle($zone);	
 foreach ($zone as $zone){
 print_r($zone); 
