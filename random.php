@@ -122,10 +122,7 @@ $emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😱","�
 
 $a=$_POST['chk'];
 // print_r($a); 
-
 // echo(rand(10,1000));
-
-
 for($i=0;$i<rand(10,10000);$i++){
 shuffle($zone);	
 shuffle($a);	
@@ -133,7 +130,7 @@ shuffle($emoji);
 }
 
 echo "<pre>";	
-echo "Random ทั้งหมด $i รอบ";; 
+echo "Radom ทั้งหมด $i รอบ";; 
 echo "<br>";
 echo "</pre>";
 
@@ -142,27 +139,207 @@ for($i=0;$i<sizeof($a);$i++){
   (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
   echo "<br>";
   echo "</pre>";
+
 }
-//print_r($zone[0]).print_r($a[0])
+// print_r($zone[0]).print_r($a[0]."\n");
+// print_r($zone[1]).print_r($a[1]."\n");
+// print_r($zone[2]).print_r($a[2]."\n");
+// print_r($zone[3]).print_r($a[3]."\n");
 
-// foreach ($zone as $zone){
-// echo "<pre>";	
-// print_r($zone).(""); 
-// echo "<br>";
-// echo "</pre>";
-// }
+//echo "<div align=center><a onClick=\"save_user()\" ><img src='images/Chonthida.png' title='save' hight='50' width='50'  border=0></a></div>"; 
 
-
-// $a=$_POST['chk'];
-// shuffle($a);	
-// foreach ($a as $a) {	
-// echo "<pre>😀  ";		
-// print_r($a); 
-// echo "</pre>";	
-
-// }
+echo " <input type='HIDDEN' name='user_name0' id='user_name0' value= '$a[0]' />
+       <input type='HIDDEN' name='zone_name0' id='zone_name0' value= '$zone[0]' />
+       <input type='HIDDEN' name='user_name1' id='user_name1' value= '$a[1]' />
+       <input type='HIDDEN' name='zone_name1' id='zone_name1' value= '$zone[1]' />
+       <input type='HIDDEN' name='user_name2' id='user_name2' value= '$a[2]' />
+       <input type='HIDDEN' name='zone_name2' id='zone_name2' value= '$zone[2]' />
+       <input type='HIDDEN' name='user_name3' id='user_name3' value= '$a[3]' />
+       <input type='HIDDEN' name='zone_name3' id='zone_name3' value= '$zone[3]' /> 
+";
 
 ?>
+
+<div>
+
+<script>
+     $(document).ready(function() {
+      save_user();
+    console.log("Ready!");
+});
+</script>
+<script>
+    var oTable = document.getElementById('myTable');
+    var rowLength = oTable.rows.length;   
+    for (i = 1; i < rowLength; i++){
+       var oCells = oTable.rows.item(i).cells;
+       var cellLength = oCells.length;
+	   var data = oCells.item(0).innerHTML+' '+oCells.item(1).innerHTML.trim()+' '+oCells.item(2).innerHTML.trim()+' '+oCells.item(3).innerHTML.trim();
+	   //alert(data);
+	   //var Alert = new CustomAlert();
+	   //Alert.render (data);
+	   if(oCells.item(4).innerHTML.trim() == '')
+	   {
+	   		showDialog(i,data,oCells.item(1).innerHTML.trim());
+			alertPopup(i,data,oCells.item(1).innerHTML.trim());
+	   }
+    }
+	
+</script>
+
+
+
+<table>
+  <tr>
+   <td></td>
+   <td><input type="HIDDEN" name="id" id="user_id" /></td>
+  </tr>
+  <tr>
+  <td></td>
+   <td><input type="HIDDEN" name="zone_id" id="zone_id" /></td>
+  </tr>
+   <td> </td>
+   <td><input type="HIDDEN" name="user_name" id="user_name" /></td>
+  </tr>
+   <tr>
+   <td> </td>
+   <td><input type="HIDDEN" name="zone" id="zone_name" /></td>
+  </tr>
+
+  <tr>
+   <td colspan="2">
+  <input type="HIDDEN" value="Save" onclick="save_user();" />
+  <input type="HIDDEN" value="Update" onclick="update_user();" />
+  <input type="HIDDEN" value="Delete" onclick="delete_user();" />
+    
+   </td>
+  </tr>
+ </table>
+ 
+ <!-- <h3>Random log</h3> -->
+ <!-- <time datetime="YYYY-MM-DDThh:mm:ssTZD"> -->
+ 
+ <!-- <table type="HIDDEN" id="tbl_users_list" border="1"> -->
+ <p id="time_stamp"></p>
+<script>
+document.getElementById("time_stamp").innerHTML = <time datetime="YYYY-MM-DDThh:mm:ssTZD">);
+</script>
+  <script>
+  var d = new Date();
+  document.write(d.toLocaleString());
+   // document.write("<br>");
+  </script>
+  <tr>
+
+ </table>
+
+ 
+ <script>
+  var tblUsers = document.getElementById('tbl_users_list');
+  var databaseRef = firebase.database().ref('users/');
+  var rowIndex = 1;
+  
+  databaseRef.once('value', function(snapshot) {
+   snapshot.forEach(function(childSnapshot) {
+   var childKey = childSnapshot.key;
+   var childData = childSnapshot.val();
+   
+   var row = tblUsers.insertRow(rowIndex);
+   var cellId = row.insertCell(0);
+   var cellName = row.insertCell(1);
+   var celltime = row.insertCell(2);
+    var cellzone = row.insertCell(3);
+  // cellId.appendChild(document.createTextNode(childKey));
+   cellName.appendChild(document.createTextNode(childData.user_name));
+   celltime.appendChild(document.createTextNode(childData.time_stamp));
+   cellzone.appendChild(document.createTextNode(childData.zone));
+   
+   rowIndex = rowIndex + 1;
+    });
+  });
+  
+  function save_user(){
+    
+   var uid = firebase.database().ref().child('users').push().key;
+   document.getElementById("time_stamp").value = Date();
+   var time_stamp = document.getElementById('time_stamp').value;
+   
+   var user_name0 = document.getElementById('user_name0').value;
+   var user_name1 = document.getElementById('user_name1').value;
+   var user_name2 = document.getElementById('user_name2').value;
+   var user_name3 = document.getElementById('user_name3').value;
+
+   var zone0 = document.getElementById('zone_name0').value;
+   var zone1 = document.getElementById('zone_name1').value;
+   var zone2 = document.getElementById('zone_name2').value;
+   var zone3 = document.getElementById('zone_name3').value;
+
+   var zone_id = document.getElementById('zone_id').value;
+
+
+   var data = {
+    user_id: uid,
+    time_stamp: time_stamp,
+    user_name0: user_name0,
+    user_name1: user_name1,
+    user_name2: user_name2,
+    user_name3: user_name3,
+
+    zone0: zone0,
+    zone1: zone1,
+    zone2: zone2,
+    zone3: zone3,
+
+    zone_id: zone_id
+    
+   }
+   
+   var updates = {};
+   updates['/users/' + uid] = data;
+   firebase.database().ref().update(updates);
+  alert('บันทึกแล้วห้ามกดอีกนะจ๊ะ 😜!! ยังไม่ได้เขียน BlocK 55');
+  // reload_page();
+   }
+  
+  function update_user(){
+   var user_name = document.getElementById('user_name').value;
+   var user_id = document.getElementById('user_id').value;
+
+   var data = {
+    user_id: user_id,
+    user_name: user_name
+   }
+   
+   var updates = {};
+   updates['/users/' + user_id] = data;
+   firebase.database().ref().update(updates);
+   
+   alert('The user is updated successfully!');
+   
+   reload_page();
+  }
+  
+  function delete_user(){
+   var user_id = document.getElementById('user_id').value;
+  
+   firebase.database().ref().child('/users/' + user_id).remove();
+   alert('The user is deleted successfully!');
+   reload_page();
+  }
+  
+  function reload_page(){
+   window.location.reload();
+  }
+  
+ </script>
+<script>
+ $.get('https://nmc-bot-knowlege.firebaseio.com/', function(data) {
+     alert(data);
+});
+ </script>
+
+</div>
+
 <div>
 <script>random_imglink()</script>
 </div>
@@ -186,7 +363,6 @@ for($i=0;$i<sizeof($a);$i++){
  </script>
 
 <br><br><br><br>
-
 </form>	       
     <hr>
     </div>
@@ -201,8 +377,6 @@ for($i=0;$i<sizeof($a);$i++){
   </div>
 </div>
 <div>
-
-
 </div>
 <footer class="container-fluid text-center">
   <p>NMC WEB</p>
