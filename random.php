@@ -18,7 +18,6 @@
         messagingSenderId: "835175970640"
       };
       firebase.initializeApp(config);
-
   </script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -32,7 +31,7 @@
     
     /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
+      padding-top: 60px;
       background-color: #f1f1f1;
       height: 100%;
     }
@@ -119,6 +118,7 @@ echo "🕖 The time is " . date("h:i:sa"). "<br><br>";
 
 
 $zone = array("⭐ North ::   ","⭐ BangKok and East ::  ","⭐ Northeast ::  ","⭐ South Central and West ::  ");
+$emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😱","😜","😛");
 
 $a=$_POST['chk'];
 // print_r($a); 
@@ -126,9 +126,10 @@ $a=$_POST['chk'];
 // echo(rand(10,1000));
 
 
-for($i=0;$i<rand(10,1000);$i++){
+for($i=0;$i<rand(10,10000);$i++){
 shuffle($zone);	
 shuffle($a);	
+shuffle($emoji);
 }
 
 echo "<pre>";	
@@ -138,11 +139,11 @@ echo "</pre>";
 
 for($i=0;$i<sizeof($a);$i++){
   echo "<pre>";	
-  (" ").print_r($zone[$i]).(" ").print_r("😁  ".$a[$i]).(""); 
+  (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
   echo "<br>";
   echo "</pre>";
-
 }
+//print_r($zone[0]).print_r($a[0])
 
 // foreach ($zone as $zone){
 // echo "<pre>";	
@@ -160,7 +161,6 @@ for($i=0;$i<sizeof($a);$i++){
 // echo "</pre>";	
 
 // }
-
 
 ?>
 <div>
