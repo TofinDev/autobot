@@ -133,7 +133,7 @@ shuffle($emoji);
 }
 
 echo "<pre>";	
-echo "Radom ทั้งหมด $i รอบ";; 
+echo "Random ทั้งหมด $i รอบ";; 
 echo "<br>";
 echo "</pre>";
 
