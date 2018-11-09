@@ -284,7 +284,8 @@ $(function(){
    
     $("#form_checkbox1").submit(function(){
         if($(".css_data_item:checked").length<4){
-            alert("เลือกอย่างน้อย 4 คน");    
+            alert("เลือกอย่างน้อย 4 คน");  
+
             return false;       
         }    
     });       
