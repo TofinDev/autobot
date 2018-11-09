@@ -6,6 +6,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+   <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDiehcoOar2PSKNWdM5cMlWk3mCT5FXAr4",
+        authDomain: "nmc-bot-knowlege.firebaseapp.com",
+        databaseURL: "https://nmc-bot-knowlege.firebaseio.com",
+        projectId: "nmc-bot-knowlege",
+        storageBucket: "nmc-bot-knowlege.appspot.com",
+        messagingSenderId: "835175970640"
+      };
+      firebase.initializeApp(config);
+
+  </script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -56,7 +70,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <a class="navbar-brand" href="log.php">log</a>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -69,6 +83,7 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
+   
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Welcome </h1>
@@ -97,31 +112,79 @@ document.onmouseup = mousehandler;
  
 </script>
 
- <?php
+<?php
 echo "Today is " . date("Y/m/d") . "<br>";
- date_default_timezone_set('Asia/Bangkok');
-echo "The time is " . date("h:i:sa"). "<br><br>"; 
-	
-	
+date_default_timezone_set('Asia/Bangkok');
+echo "🕖 The time is " . date("h:i:sa"). "<br><br>"; 
 
-$zone = array("North :: ","BangKok and East :: ","Northeast ::","South Central and West :: ");
-	shuffle($zone);	
-foreach ($zone as $zone){
-print_r($zone); 
-	echo "<br>";
-	
-}	
+
+$zone = array("⭐ North ::   ","⭐ BangKok and East ::  ","⭐ Northeast ::  ","⭐ South Central and West ::  ");
+
 $a=$_POST['chk'];
+// print_r($a); 
+
+// echo(rand(10,1000));
+
+
+for($i=0;$i<rand(10,1000);$i++){
+shuffle($zone);	
 shuffle($a);	
-foreach ($a as $a) {	
-echo "<pre>";		
-print_r($a); 
-echo "</pre>";	
 }
 
-	
- ?>
+echo "<pre>";	
+echo "Radom ทั้งหมด $i รอบ";; 
+echo "<br>";
+echo "</pre>";
+
+for($i=0;$i<sizeof($a);$i++){
+  echo "<pre>";	
+  (" ").print_r($zone[$i]).(" ").print_r("😁  ".$a[$i]).(""); 
+  echo "<br>";
+  echo "</pre>";
+
+}
+
+// foreach ($zone as $zone){
+// echo "<pre>";	
+// print_r($zone).(""); 
+// echo "<br>";
+// echo "</pre>";
+// }
+
+
+// $a=$_POST['chk'];
+// shuffle($a);	
+// foreach ($a as $a) {	
+// echo "<pre>😀  ";		
+// print_r($a); 
+// echo "</pre>";	
+
+// }
+
+
+?>
+<div>
+<script>random_imglink()</script>
+</div>
+
+<script>random_imglink()</script>
+<script language="JavaScript">
  
+ function random_imglink(){
+  var myimages=new Array()
+  //specify random images below. You can have as many as you wish
+  myimages[1]="images/Jitrakorn.png"
+  myimages[2]="images/Jutamath.png"
+  myimages[2]="images/Jutamath.png"
+  var ry=Math.floor(Math.random()*myimages.length)
+
+  if (ry==0)
+     ry=1
+     document.write('<img src="'+myimages[ry]+'" width="800" border=0>')
+}
+ return myimages;
+ </script>
+
 <br><br><br><br>
 
 </form>	       
@@ -137,7 +200,10 @@ echo "</pre>";
     </div>
   </div>
 </div>
+<div>
 
+
+</div>
 <footer class="container-fluid text-center">
   <p>NMC WEB</p>
 </footer>
