@@ -118,7 +118,7 @@ echo "🕖 The time is " . date("h:i:sa"). "<br><br>";
 
 
 $zone = array("⭐ North ::   ","⭐ BangKok and East ::  ","⭐ Northeast ::  ","⭐ South Central and West ::  ");
-$emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😱","😜","😛");
+$emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
 
 $a=$_POST['chk'];
 // print_r($a); 
