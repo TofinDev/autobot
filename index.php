@@ -168,6 +168,11 @@
 
   <td> <pre> Chonthida</pre></td> 
   </tr>
+   <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Arak" /> </td>  
+
+  <td> <pre> P'PE Arak</pre></td> 
+  </tr>
   <td></td>  
   </tr>
   </tr>  
