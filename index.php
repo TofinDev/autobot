@@ -159,9 +159,9 @@
     <td> <pre> Karn Naja</pre></td> 
   </tr>
    <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Somjet" /> </td>  
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Somjed" /> </td>  
    
-    <td> <pre> Somjet</pre></td>   
+    <td> <pre> Somjed</pre></td>   
   </tr>
    <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chonthida" /> </td>  
