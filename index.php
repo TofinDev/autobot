@@ -176,7 +176,7 @@
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sarawut" /> </td>  
 
-  <td> <pre> Sarawut_rat/pre></td> 
+  <td> <pre> Sarawut_rat</pre></td> 
   </tr>
   
  
