@@ -114,10 +114,10 @@ document.onmouseup = mousehandler;
 <?php
 echo "Today is " . date("Y/m/d") . "<br>";
 date_default_timezone_set('Asia/Bangkok');
-echo "🕖 The time is " . date("h:i:sa"). "<br><br>"; 
+echo "🕖 The time is " . date("h:i:s a"). "<br><br>"; 
 
 
-$zone = array("⭐ North & East ::   ","⭐BangKok & Northeast ::  ","⭐ South Central and West ::  ");
+$zone = array("⭐ North & East ::  ","⭐ BangKok & Northeast ::  ","⭐ South Central and West ::  ");
 $emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
 
 $a=$_POST['chk'];
