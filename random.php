@@ -115,32 +115,66 @@ document.onmouseup = mousehandler;
 echo "Today is " . date("Y/m/d") . "<br>";
 date_default_timezone_set('Asia/Bangkok');
 echo "🕖 The time is " . date("h:i:s a"). "<br><br>"; 
-
-
-$zone = array("⭐ North & East ::  ","⭐ BangKok & Northeast ::  ","⭐ South Central and West ::  ");
-$emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
-
 $a=$_POST['chk'];
-// print_r($a); 
-// echo(rand(10,1000));
-for($i=0;$i<rand(10,10000);$i++){
-shuffle($zone);	
-shuffle($a);	
-shuffle($emoji);
-}
 
-echo "<pre>";	
-echo "🎲 Random ทั้งหมด $i รอบ";; 
-echo "<br>";
-echo "</pre>";
+    if(sizeof($a)==3){
+      $zone = array("⭐ North & East ::  ","⭐ BangKok & Northeast ::  ","⭐ South & CEW ::  ");
+      $emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
 
-for($i=0;$i<sizeof($a);$i++){
-  echo "<pre>";	
-  (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
-  echo "<br>";
-  echo "</pre>";
 
-}
+        // print_r($a); 
+        // echo(rand(10,1000));
+        for($i=0;$i<rand(10,10000);$i++){
+        shuffle($zone);	
+        shuffle($a);	
+        shuffle($emoji);
+        }
+
+        echo "<pre>";	
+        echo "🎲 Random 3 คนจ้า ทั้งหมด $i รอบ";; 
+        echo "<br>";
+        echo "</pre>";
+
+        for($i=0;$i<sizeof($a);$i++){
+          echo "<pre>";	
+          (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
+          echo "<br>";
+          echo "</pre>";
+
+        }
+
+    }
+    if(sizeof($a)==4){
+
+            $zone = array("⭐ Northeast ::  ","⭐ Nort ::  ","⭐ Bangkok & East ::  ","⭐ South & CEW ::  ");
+            $emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
+
+            $a=$_POST['chk'];
+            // print_r($a); 
+            // echo(rand(10,1000));
+            for($i=0;$i<rand(10,10000);$i++){
+            shuffle($zone);	
+            shuffle($a);	
+            shuffle($emoji);
+            }
+
+            echo "<pre>";	
+            echo "🎲 Random 4 คนจ้า ทั้งหมด $i รอบ";; 
+            echo "<br>";
+            echo "</pre>";
+
+            for($i=0;$i<sizeof($a);$i++){
+              echo "<pre>";	
+              (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
+              echo "<br>";
+              echo "</pre>";
+
+            }
+
+
+    }
+
+   
 // print_r($zone[0]).print_r($a[0]."\n");
 // print_r($zone[1]).print_r($a[1]."\n");
 // print_r($zone[2]).print_r($a[2]."\n");
