@@ -117,7 +117,7 @@ date_default_timezone_set('Asia/Bangkok');
 echo "🕖 The time is " . date("h:i:sa"). "<br><br>"; 
 
 
-$zone = array("⭐ North ::   ","⭐ BangKok and East ::  ","⭐ Northeast ::  ","⭐ South Central and West ::  ");
+$zone = array("⭐ North & East ::   ","⭐BangKok & Northeast ::  ","⭐ South Central and West ::  ");
 $emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
 
 $a=$_POST['chk'];
@@ -154,8 +154,7 @@ echo " <input type='HIDDEN' name='user_name0' id='user_name0' value= '$a[0]' />
        <input type='HIDDEN' name='zone_name1' id='zone_name1' value= '$zone[1]' />
        <input type='HIDDEN' name='user_name2' id='user_name2' value= '$a[2]' />
        <input type='HIDDEN' name='zone_name2' id='zone_name2' value= '$zone[2]' />
-       <input type='HIDDEN' name='user_name3' id='user_name3' value= '$a[3]' />
-       <input type='HIDDEN' name='zone_name3' id='zone_name3' value= '$zone[3]' /> 
+   
 ";
 
 ?>
