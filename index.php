@@ -105,24 +105,25 @@
   </script></h2>
 <thead>  
   <tr>  
-    <th align="center" bgcolor="##1e90ff">&nbsp;</th>  
-    <th bgcolor="##1e90ff">Name</th>  
+    <td align="center" bgcolor="##1e90ff">&nbsp;</td>  
+    <td bgcolor="##1e90ff">Name</td>  
   </tr>  
+
 </thead>    
 
-<tr> 
+  <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Arak" /> </td>  
     <td> <pre> Arak</pre></td> 
   </tr>
 
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chonthida" /> </td>  
-    <td> <pre> Chonthida</pre></td> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chawakorn" /> </td>  
+    <td> <pre> Chawakorn</pre></td> 
   </tr>
 
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chawakorn" /> </td>  
-    <td> <pre> Chawakorn</pre></td> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chonthida" /> </td>  
+    <td> <pre> Chonthida</pre></td> 
   </tr>
 
   <tr> 
@@ -139,6 +140,11 @@
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Jutamath" /> </td>  
     <td> <pre> Jutamath</pre></td> 
   </tr>
+  
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Karn Naja" /> </td>  
+    <td> <pre> Karn Naja</pre></td> 
+  </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Korbkrun" /> </td>  
@@ -146,8 +152,8 @@
   </tr>
 
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Karn Naja" /> </td>  
-    <td> <pre> Karn Naja</pre></td> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nathawut" /> </td>  
+    <td> <pre> Nathawut</pre></td> 
   </tr>
 
    <tr> 
@@ -156,24 +162,14 @@
   </tr>
 
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nathawut" /> </td>  
-    <td> <pre> Nathawut</pre></td> 
-  </tr>
-
-  <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Pattharapong" /> </td>  
     <td> <pre> Pattharapong</pre></td> 
   </tr>
 
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Surasak" /> </td>  
-    <td> <pre> Surasak</pre></td> 
-  </tr>
-
-  <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sompong" /> </td>  
-    <td> <pre> Sompong</pre></td> 
-  </tr>
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sarawut" /> </td>  
+    <td> <pre> Sarawut</pre></td> 
+   </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Somjed" /> </td>  
@@ -181,10 +177,14 @@
   </tr>
 
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sarawut" /> </td>  
-    <td> <pre> Sarawut</pre></td> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sompong" /> </td>  
+    <td> <pre> Sompong</pre></td> 
   </tr>
   
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Surasak" /> </td>  
+    <td> <pre> Surasak</pre></td> 
+  </tr>
  
   <td></td>  
   </tr>
