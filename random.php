@@ -146,7 +146,7 @@ $a=$_POST['chk'];
     }
     if(sizeof($a)==4){
 
-            $zone = array("⭐ Northeast ::  ","⭐ Nort ::  ","⭐ Bangkok & East ::  ","⭐ South & CEW ::  ");
+            $zone = array("⭐ Northeast ::  ","⭐ North ::  ","⭐ Bangkok & East ::  ","⭐ South & CEW ::  ");
             $emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
 
             $a=$_POST['chk'];
