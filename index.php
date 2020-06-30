@@ -191,8 +191,11 @@
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Eaknarin" /> </td>  
     <td> <pre> Eaknarin</pre></td> 
   </tr>	
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Aekkachai" /> </td>  
+    <td> <pre> Aekkachai</pre></td> 
+  </tr>	
 
- 
   <td></td>  
   </tr>
   </tr>  
