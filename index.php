@@ -111,8 +111,22 @@
 
 </thead>   
    <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Anusorn" /> </td>  
-    <td> <pre>Anusorn</pre></td> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nattawut_P" /> </td>  
+    <td> <pre>Nattawut_P</pre></td> 
+  </tr>
+  
+    <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nipon" /> </td>  
+    <td> <pre>Nipon</pre></td> 
+  </tr>
+  
+    <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chanwit" /> </td>  
+    <td> <pre>Chanwit</pre></td> 
+  </tr>
+     <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Somneuk" /> </td>  
+    <td> <pre>Somneuk</pre></td> 
   </tr>
 
   <tr> 
