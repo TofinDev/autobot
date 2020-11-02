@@ -173,6 +173,35 @@ $a=$_POST['chk'];
 
 
     }
+	   if(sizeof($a)==2){
+
+            $zone = array("⭐Bangkok & East & Northeast ::  ","⭐ North & South & CEW :: ");
+            $emoji = array("😀","😂","😋","😎","😘","😍","😆","😎","😜","😛");
+
+            $a=$_POST['chk'];
+            // print_r($a); 
+            // echo(rand(10,1000));
+            for($i=0;$i<rand(10,10000);$i++){
+            shuffle($zone);	
+            shuffle($a);	
+            shuffle($emoji);
+            }
+
+            echo "<pre>";	
+            echo "🎲 Random 2 คนจ้า ทั้งหมด $i รอบ";; 
+            echo "<br>";
+            echo "</pre>";
+
+            for($i=0;$i<sizeof($a);$i++){
+              echo "<pre>";	
+              (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
+              echo "<br>";
+              echo "</pre>";
+
+            }
+
+
+    }
 
    
 // print_r($zone[0]).print_r($a[0]."\n");
