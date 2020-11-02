@@ -155,8 +155,8 @@
   </tr>
   
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Karn Naja" /> </td>  
-    <td> <pre> Karn Naja</pre></td> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Karn J Sitom" /> </td>  
+    <td> <pre>Karn J Sitom</pre></td> 
   </tr>
 
   <tr> 
