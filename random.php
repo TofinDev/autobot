@@ -148,7 +148,7 @@ $a=$_POST['chk'];
           (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
           echo "<br>";
           echo "</pre>";
-          $str_log  .= (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
+          $str_log  .= $zone[$i].",".$emoji[$i].",".$a[$i]; 
         }
 
     }
@@ -176,7 +176,7 @@ $a=$_POST['chk'];
               (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
               echo "<br>";
               echo "</pre>";
-              $str_log  .= (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
+              $str_log  .= $zone[$i].",".$emoji[$i].",".$a[$i]; 
             }
 
 
@@ -205,7 +205,7 @@ $a=$_POST['chk'];
               (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
               echo "<br>";
               echo "</pre>";
-              $str_log  .= print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
+              $str_log  .= $zone[$i].",".$emoji[$i].",".$a[$i]; 
             }
 
 
@@ -458,5 +458,3 @@ document.getElementById("time_stamp").innerHTML = <time datetime="YYYY-MM-DDThh:
 
 </body>
 </html>
-
-
