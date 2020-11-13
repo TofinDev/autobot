@@ -115,7 +115,15 @@ document.onmouseup = mousehandler;
 echo "Today is " . date("Y/m/d") . "<br>";
 date_default_timezone_set('Asia/Bangkok');
 echo "🕖 The time is " . date("h:i:s a"). "<br><br>"; 
+
+date_default_timezone_set('Asia/Bangkok');
+$t=time();
+$date = date('Y-m-d H:i:s');		
+
+
 $a=$_POST['chk'];
+
+    $str_log = "";
 
     if(sizeof($a)==3){
       $zone = array("⭐ North & East ::  ","⭐ BangKok & Northeast ::  ","⭐ South & CEW ::  ");
@@ -140,7 +148,7 @@ $a=$_POST['chk'];
           (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
           echo "<br>";
           echo "</pre>";
-
+          $str_log  .= (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
         }
 
     }
@@ -168,7 +176,7 @@ $a=$_POST['chk'];
               (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
               echo "<br>";
               echo "</pre>";
-
+              $str_log  .= (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
             }
 
 
@@ -197,13 +205,17 @@ $a=$_POST['chk'];
               (" ").print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
               echo "<br>";
               echo "</pre>";
-
+              $str_log  .= print_r($zone[$i]).(" ").print_r($emoji[$i]).print_r("  ".$a[$i]).(""); 
             }
 
 
     }
 
-   
+    
+    $myfile = fopen("Log.txt", "a") or die("Unable to open file!");
+    $txt = "$date,".$str_log."\n";
+    fwrite($myfile, $txt);
+    fclose($myfile);
 // print_r($zone[0]).print_r($a[0]."\n");
 // print_r($zone[1]).print_r($a[1]."\n");
 // print_r($zone[2]).print_r($a[2]."\n");
