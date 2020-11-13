@@ -110,112 +110,69 @@
   </tr>  
 
 </thead>   
-   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nattawut_P" /> </td>  
-    <td> <pre>Nattawut_P</pre></td> 
-  </tr>
-  
-    <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nipon" /> </td>  
-    <td> <pre>Nipon</pre></td> 
-  </tr>
-  
-    <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chanwit" /> </td>  
-    <td> <pre>Chanwit</pre></td> 
-  </tr>
-     <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Somneuk" /> </td>  
-    <td> <pre>Somneuk</pre></td> 
-  </tr>
-
   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Arak" /> </td>  
-    <td> <pre> Arak</pre></td> 
+    <td width="50" align="center" > <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Arak" /> </td>  
+    <td >  <pre class="btn btn-lg btn-info"> Arak</pre></td> 
   </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chawakorn" /> </td>  
-    <td> <pre> Chawakorn</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Chawakorn</pre></td> 
   </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chonthida" /> </td>  
-    <td> <pre> Chonthida</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Chonthida</pre></td> 
   </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Jitrakorn" /> </td>  
-    <td> <pre> Jitrakorn</pre></td>  
-  </tr>
-
-  <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Jutamath" /> </td>  
-    <td> <pre> Jutamath</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Jitrakorn</pre></td>  
   </tr>
   
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Karn J Sitom" /> </td>  
-    <td> <pre>Karn J Sitom</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info">Karn J Sitom</pre></td> 
   </tr>
 
-  <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Korbkrun" /> </td>  
-    <td> <pre> Korbkrun</pre></td> 
-  </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nathawut" /> </td>  
-    <td> <pre> Nathawut</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Nathawut</pre></td> 
   </tr>
 
    <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Nattakit" /> </td>   
-    <td> <pre> Nattakit</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Nattakit</pre></td> 
   </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Pattharapong" /> </td>  
-    <td> <pre> Pattharapong</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Pattharapong</pre></td> 
   </tr>
-
-  <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sarawut" /> </td>  
-    <td> <pre> Sarawut</pre></td> 
-   </tr>
 
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Somjed" /> </td>  
-    <td> <pre> Somjed</pre></td>   
-  </tr>
-
-  <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sompong" /> </td>  
-    <td> <pre> Sompong</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Somjed</pre></td>   
   </tr>
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Surasak" /> </td>  
-    <td> <pre> Surasak</pre></td> 
-  </tr>	
-   <tr> 
-    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Yutthana" /> </td>  
-    <td> <pre> Yutthana</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Surasak</pre></td> 
   </tr>	
     <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Eaknarin" /> </td>  
-    <td> <pre> Eaknarin</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Eaknarin</pre></td> 
   </tr>	
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Aekkachai" /> </td>  
-    <td> <pre> Aekkachai</pre></td> 
+    <td> <pre  class="btn btn-lg btn-info"> Aekkachai</pre></td> 
   </tr>	
-
   <td></td>  
   </tr>
   </tr>  
     <td align="center">&nbsp;</td>  
     <td><br>
-    <button type="submit"name="button" id="button" value="Random" class="btn btn-outline-default btn-rounded waves-effect" action="random.php">Random</button>
+    <button type="submit"name="button" id="button" value="Random" type="button" class="btn btn-success btn-lg btn-block"s action="random.php">Random</button>
     <form id="form_checkbox1" name="form_checkbox1" method="post" action="random.php">  
     </td>  
   </tr>        
@@ -353,3 +310,4 @@
 
 </body>
 </html>
+
