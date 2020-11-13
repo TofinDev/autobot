@@ -111,6 +111,10 @@
 
 </thead>   
 
+<tr> 
+    <td width="50" align="center" > <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Kridsakorn" /> </td>  
+    <td >  <pre class="btn btn-lg btn-info"> Kridsakorn</pre></td> 
+  </tr>
   <tr> 
     <td width="50" align="center" > <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Arak" /> </td>  
     <td >  <pre class="btn btn-lg btn-info"> Arak</pre></td> 
