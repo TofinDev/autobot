@@ -89,7 +89,9 @@
     <?php
 
     $myfile = fopen("Log.txt", "r") or die("Unable to open file!");
-    echo fgets($myfile);
+    while(!feof($myfile)) {
+        echo fgets($myfile) . "<br>";
+      }
     fclose($myfile);
     
     ?>
