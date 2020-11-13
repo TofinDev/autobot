@@ -110,11 +110,35 @@
   </tr>  
 
 </thead>   
+
   <tr> 
     <td width="50" align="center" > <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Arak" /> </td>  
     <td >  <pre class="btn btn-lg btn-info"> Arak</pre></td> 
   </tr>
-
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Kittipong" /> </td>  
+    <td> <pre  class="btn btn-lg btn-info"> Kittipong</pre></td> 
+  </tr>	
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Taree" /> </td>  
+    <td> <pre  class="btn btn-lg btn-info"> Taree</pre></td> 
+  </tr>	
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Turakorn" /> </td>  
+    <td> <pre  class="btn btn-lg btn-info"> Turakorn</pre></td> 
+  </tr>	
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Rungroj" /> </td>  
+    <td> <pre  class="btn btn-lg btn-info"> Rungroj</pre></td> 
+  </tr>	
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Sakchai" /> </td>  
+    <td> <pre  class="btn btn-lg btn-info"> Sakchai</pre></td> 
+  </tr>	
+  <tr> 
+    <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chokdee" /> </td>  
+    <td> <pre  class="btn btn-lg btn-info"> Chokdee</pre></td> 
+  </tr>	
   <tr> 
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Chawakorn" /> </td>  
     <td> <pre  class="btn btn-lg btn-info"> Chawakorn</pre></td> 
@@ -167,6 +191,7 @@
     <td width="50" align="center"> <input name="chk[]" type="checkbox" class="css_data_item" id="data_item1" value="Aekkachai" /> </td>  
     <td> <pre  class="btn btn-lg btn-info"> Aekkachai</pre></td> 
   </tr>	
+  
   <td></td>  
   </tr>
   </tr>  
@@ -310,4 +335,3 @@
 
 </body>
 </html>
-
